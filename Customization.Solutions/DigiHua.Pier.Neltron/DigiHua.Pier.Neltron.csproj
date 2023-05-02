@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>Pier.Neltron</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<LangVersion>preview</LangVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<LangVersion>preview</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Meziantou.Analyzer" Version="1.0.756">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\DigiHua.IIoT.Domain\DigiHua.IIoT.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Coravel" />
+		<Using Include="Coravel.Invocable" />
+		<Using Include="Volo.Abp.Autofac" />
+		<Using Include="Volo.Abp.DependencyInjection" />
+		<Using Include="Volo.Abp.Modularity" />
+		<Using Include="YamlDotNet.Serialization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Microsoft.Extensions.Configuration" />
+		<Using Include="Microsoft.Extensions.DependencyInjection" />
+		<Using Include="Microsoft.Extensions.FileProviders" />
+		<Using Include="Microsoft.Extensions.Hosting" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="System.Collections.Concurrent" />
+		<Using Include="System.Diagnostics" />
+		<Using Include="System.Globalization" />
+		<Using Include="System.Reflection" />
+		<Using Include="System.Text" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Domain.Functions.Experts" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Domain.Shared.Functions.Mediums" />
+		<Using Include="IIoT.Domain.Shared.Functions.Mediums.SourceMedium" Static="true" />
+		<Using Include="IIoT.Domain.Shared.Functions.Mediums.TextMedium" Static="true" />
+		<Using Include="IIoT.Domain.Shared.Functions.Promoters" />
+		<Using Include="IIoT.Domain.Shared.Functions.Triggers.IFoundationTrigger" Static="true" />
+		<Using Include="IIoT.Domain.Shared.Remotes.Manufactures" />
+		<Using Include="IIoT.Domain.Shared.Wrappers" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Pier.Neltron.Guards" />
+		<Using Include="Pier.Neltron.Parsers" />
+		<Using Include="Pier.Neltron.Profiles" />
+	</ItemGroup>
+
+</Project>

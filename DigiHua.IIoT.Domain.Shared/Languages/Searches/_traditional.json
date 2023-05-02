@@ -1,0 +1,10 @@
+{
+  "culture": "zh-TW",
+  "texts": {
+    "FactoryNo": "工廠編號",
+    "GroupNo": "群組編號",
+    "SessionNo": "聯網編號",
+    "Endpoint": "端點位置",
+    "EquipmentNo": "設備編號"
+  }
+}

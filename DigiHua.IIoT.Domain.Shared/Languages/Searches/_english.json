@@ -1,0 +1,10 @@
+{
+  "culture": "en-US",
+  "texts": {
+    "FactoryNo": "Factory No.",
+    "GroupNo": "Group No.",
+    "SessionNo": "Session No.",
+    "Endpoint": "Endpoint URL",
+    "EquipmentNo": "Equipment No."
+  }
+}

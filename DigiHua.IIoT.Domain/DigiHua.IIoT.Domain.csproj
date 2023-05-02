@@ -1,0 +1,136 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>IIoT.Domain</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<LangVersion>preview</LangVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<LangVersion>preview</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Coravel" Version="4.2.0" />
+		<PackageReference Include="Meziantou.Analyzer" Version="1.0.757">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.1" />
+		<PackageReference Include="Refit" Version="6.3.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DigiHua.IIoT.Domain.Shared\DigiHua.IIoT.Domain.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Resources\favicon.ico">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\service.exe">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Dapper" />
+		<Using Include="InfluxDB.Client" />
+		<Using Include="InfluxDB.Client.Api.Domain" />
+		<Using Include="InfluxDB.Client.Linq" />
+		<Using Include="InfluxDB.Client.Writes" />
+		<Using Include="MQTTnet" />
+		<Using Include="MQTTnet.Client" />
+		<Using Include="MQTTnet.Exceptions" />
+		<Using Include="MQTTnet.Protocol" />
+		<Using Include="NModbus" />
+		<Using Include="Npgsql" />
+		<Using Include="Opc.Ua" />
+		<Using Include="Opc.Ua.Client" />
+		<Using Include="Serilog" />
+		<Using Include="Serilog.Events" />
+		<Using Include="Volo.Abp.DependencyInjection" />
+		<Using Include="Volo.Abp.Localization" />
+		<Using Include="Volo.Abp.Modularity" />
+		<Using Include="Volo.Abp.VirtualFileSystem" />
+		<Using Include="YamlDotNet.Serialization" />
+		<Using Include="YamlDotNet.Serialization.NamingConventions" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="System.CodeDom.Compiler" />
+		<Using Include="System.Collections.Concurrent" />
+		<Using Include="System.Collections.Immutable" />
+		<Using Include="System.ComponentModel" />
+		<Using Include="System.Data" />
+		<Using Include="System.Diagnostics" />
+		<Using Include="System.Net" />
+		<Using Include="System.Net.NetworkInformation" />
+		<Using Include="System.Net.Sockets" />
+		<Using Include="System.Reflection" />
+		<Using Include="System.Runtime.CompilerServices" />
+		<Using Include="System.Runtime.InteropServices" />
+		<Using Include="System.Runtime.Serialization" />
+		<Using Include="System.Security.Cryptography" />
+		<Using Include="System.ServiceModel" />
+		<Using Include="System.Text" />
+		<Using Include="System.Text.Json" />
+		<Using Include="System.Text.Json.Nodes" />
+		<Using Include="System.Xml" />
+		<Using Include="System.Xml.Serialization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Microsoft.Extensions.Configuration" />
+		<Using Include="Microsoft.Extensions.DependencyInjection" />
+		<Using Include="Microsoft.Extensions.DependencyInjection.Extensions" />
+		<Using Include="Microsoft.Extensions.Localization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Domain.Businesses.Manages.Atoms" />
+		<Using Include="IIoT.Domain.Businesses.Manages.Users" />
+		<Using Include="IIoT.Domain.Businesses.Roots.Equipments" />
+		<Using Include="IIoT.Domain.Businesses.Roots.Factories" />
+		<Using Include="IIoT.Domain.Businesses.Roots.Networks" />
+		<Using Include="IIoT.Domain.Businesses.Workshops.Missions" />
+		<Using Include="IIoT.Domain.Businesses.Workshops.Processes" />
+		<Using Include="IIoT.Domain.Functions.Experts" />
+		<Using Include="IIoT.Domain.Functions.Promoters" />
+		<Using Include="IIoT.Domain.Functions.Rawdatas" />
+		<Using Include="IIoT.Domain.Functions.Triggers" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Domain.Shared" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Manages.Atoms" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Manages.Users" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Roots.Equipments" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Roots.Factories" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Roots.Networks" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Workshops.Missions" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Workshops.Processes" />
+		<Using Include="IIoT.Domain.Shared.Functions.Experts" />
+		<Using Include="IIoT.Domain.Shared.Functions.Mediums" />
+		<Using Include="IIoT.Domain.Shared.Functions.Mediums.TextMedium" Static="true" />
+		<Using Include="IIoT.Domain.Shared.Functions.Promoters" />
+		<Using Include="IIoT.Domain.Shared.Functions.Rawdatas" />
+		<Using Include="IIoT.Domain.Shared.Functions.Triggers" />
+		<Using Include="IIoT.Domain.Shared.Functions.Triggers.IFoundationTrigger" Static="true" />
+		<Using Include="IIoT.Domain.Shared.Languages.Fielders" />
+		<Using Include="IIoT.Domain.Shared.Wrappers" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Domain.Infrastructure.Postgres" />
+		<Using Include="IIoT.Domain.Infrastructure.Postgres.NpgsqlExpansion" Static="true" />
+		<Using Include="IIoT.Domain.Infrastructure.Sturdies" />
+		<Using Include="IIoT.Domain.Infrastructure.Sturdies.SturdyExpansion" Static="true" />
+	</ItemGroup>
+
+</Project>

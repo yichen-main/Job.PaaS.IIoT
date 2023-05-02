@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <NameOfLastUsedPublishProfile>D:\_Workspaces\IIoT-Server\DigiHua.IIoT.Station\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
+    <Controller_SelectedScaffolderID>MvcControllerEmptyScaffolder</Controller_SelectedScaffolderID>
+    <Controller_SelectedScaffolderCategoryPath>root/Common/MVC/Controller</Controller_SelectedScaffolderCategoryPath>
+    <IsLinterEnabled>False</IsLinterEnabled>
+    <ShouldLintJavaScript>True</ShouldLintJavaScript>
+    <ShouldLintJavaScriptReact>True</ShouldLintJavaScriptReact>
+    <ShouldLintTypeScript>True</ShouldLintTypeScript>
+    <ShouldLintTypeScriptReact>True</ShouldLintTypeScriptReact>
+  </PropertyGroup>
+</Project>

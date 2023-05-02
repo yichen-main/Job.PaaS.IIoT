@@ -1,0 +1,10 @@
+{
+  "culture": "zh-CN",
+  "texts": {
+    "FactoryNo": "工厂编号",
+    "GroupNo": "群组编号",
+    "SessionNo": "联网编号",
+    "Endpoint": "端点位置",
+    "EquipmentNo": "设备编号"
+  }
+}

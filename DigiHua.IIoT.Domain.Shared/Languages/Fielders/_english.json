@@ -1,0 +1,27 @@
+{
+  "culture": "en-US",
+  "texts": {
+    "db.build.exception": "database build exception",
+    "db.repeat.input.information": "{0} -repeat input information",
+    "db.foreign.key.does.not.exist": "{0} -foreign key does not exist",
+    "db.equipment.mission.repeat.setting": "equipment mission repeat setting",
+    "db.equipment.data.repeat.setting": "equipment data repeat setting",
+    "db.network.opcua.node.path.repeat.setting": "OPC UA NODE ID repeat setting",
+    "db.mqtt.customer.ip.repeat.setting": "MQTT customer IP repeat setting",
+    "field.cannot.be.empty": "field:{0} -cannot be empty",
+    "field.cannot.be.default": "field:{0} -cannot be default",
+    "field.cannot.be.invalid.content": "field:{0} -cannot be invalid content",
+    "field.invalid.ip.location": "field:{0} -invalid IP location",
+    "field.invalid.url.location": "field:{0} -invalid URL location",
+    "field.invalid.enumeration.value": "field:{0} -invalid enumeration value",
+    "field.with.prohibition.sign": "field:{0} -with prohibition sign '{1}'",
+    "field.invalid.duplicate.value": "field:{0} -duplicate value [{1}]",
+    "enter.wrong.username": "enter wrong username",
+    "enter.wrong.password": "enter wrong password",
+    "import.data.is.zero": "import data is zero",
+    "wrong.service.name": "wrong service name",
+    "wrong.server.connection": "bad server connection",
+    "wrong.server.max.subscription": "bad server max subscriptions",
+    "wrong.starttime.endtime.comparison": "start time is greater than or equal to end time"
+  }
+}

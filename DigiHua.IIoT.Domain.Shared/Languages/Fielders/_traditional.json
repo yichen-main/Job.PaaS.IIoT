@@ -1,0 +1,27 @@
+{
+  "culture": "zh-TW",
+  "texts": {
+    "db.build.exception": "資料庫建置異常",
+    "db.repeat.input.information": "{0} -資訊重複輸入",
+    "db.foreign.key.does.not.exist": "{0} -外鍵不存在",
+    "db.equipment.mission.repeat.setting": "設備任務重複設置",
+    "db.equipment.data.repeat.setting": "設備數據重複設置",
+    "db.network.opcua.node.path.repeat.setting": "OPC UA 的 NODE ID 重複設置",
+    "db.mqtt.customer.ip.repeat.setting": "MQTT 客戶端 IP 重複設置",
+    "field.cannot.be.empty": "欄位:{0} -不能是空字串",
+    "field.cannot.be.default": "欄位:{0} -不能是默認值",
+    "field.cannot.be.invalid.content": "欄位:{0} -不能是無效的內容",
+    "field.invalid.ip.location": "欄位:{0} -無效的 IP 位置",
+    "field.invalid.url.location": "欄位:{0} -無效的 URL 位置",
+    "field.invalid.enumeration.value": "欄位:{0} -無效的枚舉值",
+    "field.with.prohibition.sign": "欄位:{0} -帶有禁止符號 '{1}'",
+    "field.invalid.duplicate.value": "欄位:{0} -出現重複值 [{1}]",
+    "enter.wrong.username": "輸入錯誤用戶名稱",
+    "enter.wrong.password": "輸入錯誤用戶密碼",
+    "import.data.is.zero": "匯入資料筆數為零",
+    "wrong.service.name": "錯誤的服務名稱",
+    "wrong.server.connection": "錯誤的伺服器連線",
+    "wrong.server.max.subscription": "伺服器已達到其最大訂閱數",
+    "wrong.starttime.endtime.comparison": "開始時間大於或等於結束時間"
+  }
+}

@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+	<PropertyGroup>
+		<FileVersion>1.0.1</FileVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>IIoT.Terminal</RootNamespace>
+		<ApplicationIcon>..\DigiHua.IIoT.Domain\Resources\favicon.ico</ApplicationIcon>
+		<UserSecretsId>dotnet-DigiHua.IIoT.Terminal-C9BE216C-2EF7-452D-854E-E0975AD169F8</UserSecretsId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<LangVersion>preview</LangVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<LangVersion>preview</LangVersion>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<SignAssembly>False</SignAssembly>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<IsTransformWebConfigDisabled>false</IsTransformWebConfigDisabled>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<ServerGarbageCollection>false</ServerGarbageCollection>
+		<ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+		<RetainVMGarbageCollection>false</RetainVMGarbageCollection>
+		<ThreadPoolMinThreads>10</ThreadPoolMinThreads>
+		<ThreadPoolMaxThreads>100</ThreadPoolMaxThreads>
+		<TieredCompilation>true</TieredCompilation>
+		<InvariantGlobalization>false</InvariantGlobalization>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Meziantou.Analyzer" Version="1.0.756">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DigiHua.IIoT.Domain\DigiHua.IIoT.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Serilog" />
+		<Using Include="Serilog.Events" />
+		<Using Include="Volo.Abp" />
+		<Using Include="Volo.Abp.Autofac" />
+		<Using Include="Volo.Abp.Modularity" />
+		<Using Include="Volo.Abp.Modularity.PlugIns" />
+		<Using Include="YamlDotNet.Serialization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="System.Reflection" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Domain.Functions.Experts" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Domain.Shared.Functions.Mediums" />
+		<Using Include="IIoT.Domain.Shared.Functions.Mediums.SourceMedium" Static="true" />
+		<Using Include="IIoT.Domain.Shared.Functions.Mediums.TextMedium" Static="true" />
+		<Using Include="IIoT.Domain.Shared.Functions.Triggers.IFoundationTrigger" Static="true" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Terminal" />
+		<Using Include="IIoT.Terminal.Services" />
+		<Using Include="IIoT.Terminal.Services.ProfileService" Static="true" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Domain.Infrastructure.Sturdies.SturdyExpansion" Static="true" />
+	</ItemGroup>
+
+</Project>

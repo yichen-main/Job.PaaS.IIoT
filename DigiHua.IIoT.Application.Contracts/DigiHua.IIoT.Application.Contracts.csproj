@@ -1,0 +1,106 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>IIoT.Application.Contracts</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<LangVersion>preview</LangVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<LangVersion>preview</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Meziantou.Analyzer" Version="1.0.757">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DigiHua.IIoT.Domain\DigiHua.IIoT.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Dapper" />
+		<Using Include="MQTTnet" />
+		<Using Include="MQTTnet.Client" />
+		<Using Include="MQTTnet.Protocol" />
+		<Using Include="MQTTnet.Server" />
+		<Using Include="Newtonsoft.Json.Linq" />
+		<Using Include="Npgsql" />
+		<Using Include="Opc.Ua" />
+		<Using Include="Opc.Ua.Client" />
+		<Using Include="Serilog" />
+		<Using Include="Serilog.Events" />
+		<Using Include="YamlDotNet.Serialization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="System.CodeDom.Compiler" />
+		<Using Include="System.Collections.Concurrent" />
+		<Using Include="System.ComponentModel" />
+		<Using Include="System.Diagnostics" />
+		<Using Include="System.Net" />
+		<Using Include="System.Net.NetworkInformation" />
+		<Using Include="System.Reflection" />
+		<Using Include="System.Runtime.CompilerServices" />
+		<Using Include="System.Runtime.InteropServices" />
+		<Using Include="System.Runtime.Serialization" />
+		<Using Include="System.Security.Claims" />
+		<Using Include="System.Security.Principal" />
+		<Using Include="System.ServiceModel" />
+		<Using Include="System.Text" />
+		<Using Include="System.Xml" />
+		<Using Include="System.Xml.Serialization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Microsoft.AspNetCore.Http" />
+		<Using Include="Microsoft.AspNetCore.Mvc" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Application.Contracts.Architects.Profiles" />
+		<Using Include="IIoT.Application.Contracts.Architects.Services" />
+		<Using Include="IIoT.Application.Contracts.Makes.Launches" />
+		<Using Include="IIoT.Application.Contracts.Makes.Sections" />
+		<Using Include="IIoT.Application.Contracts.Wrappers" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Domain.Shared.Businesses.Manages.Users" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Roots.Equipments" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Roots.Factories" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Roots.Networks" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Workshops.Missions" />
+		<Using Include="IIoT.Domain.Shared.Businesses.Workshops.Processes" />
+		<Using Include="IIoT.Domain.Shared.Functions.Experts" />
+		<Using Include="IIoT.Domain.Shared.Functions.Mediums" />
+		<Using Include="IIoT.Domain.Shared.Functions.Mediums.TextMedium" Static="true" />
+		<Using Include="IIoT.Domain.Shared.Functions.Promoters" />
+		<Using Include="IIoT.Domain.Shared.Functions.Rawdatas" />
+		<Using Include="IIoT.Domain.Shared.Functions.Triggers" />
+		<Using Include="IIoT.Domain.Shared.Functions.Triggers.IFoundationTrigger" Static="true" />
+		<Using Include="IIoT.Domain.Shared.Wrappers" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="IIoT.Domain.Infrastructure.Newsies.ManufactureClient" Static="true" />
+		<Using Include="IIoT.Domain.Infrastructure.Postgres.NpgsqlExpansion" Static="true" />
+		<Using Include="IIoT.Domain.Infrastructure.Sturdies" />
+		<Using Include="IIoT.Domain.Infrastructure.Sturdies.SturdyExpansion" Static="true" />
+	</ItemGroup>
+
+	<ProjectExtensions>
+		<VisualStudio>
+			<UserProperties />
+		</VisualStudio>
+	</ProjectExtensions>
+
+</Project>
