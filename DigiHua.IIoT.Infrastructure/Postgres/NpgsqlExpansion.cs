@@ -47,7 +47,7 @@ public static class NpgsqlExpansion
     public static StringBuilder TimestampFormat(this StringBuilder builder, in string startTime, in string endTime, in string tag = "create_time")
     {
         return builder.AppendFormat($"{tag} BETWEEN {Format(startTime)} AND {Format(endTime)} ");
-        static string Format(string dateTime) => $"TO_TIMESTAMP('{dateTime}','yyyy-MM-dd HH24:MI:SS')";
+        static string Format(string dateTime) => $"TO_TIMESTAMP('{dateTime}'::timestamp AT TIME ZONE 'UTC','yyyy-MM-dd HH24:MI:SS')";
     }
     public static StringBuilder AddTotalCount<T>(this string field) => new($"SELECT COUNT({field}) FROM {TableName<T>()} ");
     public static string UseDelete(this string name) => $"DELETE FROM {name} WHERE {CurrentSign} = @{CurrentSign}";
